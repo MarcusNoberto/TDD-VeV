@@ -16,5 +16,19 @@ public class Util {
 		
 		return servico;
 	}
+
+	public static double calculaImposto (Servico servico, Double valorNota) {		
+		double valorImposto;
+		
+		if (servico == Servico.CONSULTORIA) {
+			valorImposto = valorNota * 0.25;
+		} else if (servico == Servico.TREINAMENTO) {
+			valorImposto = valorNota * 0.15;
+		} else {
+			valorImposto = valorNota * 0.06;
+		}
+		
+		return valorImposto;
+	}
 	
 }

@@ -54,7 +54,6 @@ class NotaFiscalTest {
 	void testValorImposto2() {
 		assertNotEquals(nf2.getValorImposto(), 10.00);
 	}
-	
 
 	@Test
 	void testSetNome() {
@@ -88,5 +87,4 @@ class NotaFiscalTest {
 		}
 	}
 	
-
 }
