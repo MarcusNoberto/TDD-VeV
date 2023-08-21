@@ -3,19 +3,6 @@ package util;
 import gerador.Servico;
 
 public class Util {
-	
-	public static Servico identificaServico(String nomeServico) {
-		Servico servico = null;
-		if (nomeServico.toUpperCase() == "CONSULTORIA") {
-			servico = Servico.CONSULTORIA;
-		} else if (nomeServico.toUpperCase() == "TREINAMENTO") {
-			servico = Servico.TREINAMENTO;
-		} else {
-			servico = Servico.OUTROS;
-		}
-		
-		return servico;
-	}
 
 	public static double calculaImposto (Servico servico, Double valorNota) {		
 		double valorImposto;
@@ -29,6 +16,19 @@ public class Util {
 		}
 		
 		return valorImposto;
+	}
+	
+	public static Servico identificaServico(String nomeServico) {
+		Servico servico = null;
+		if (nomeServico.toUpperCase() == "CONSULTORIA") {
+			servico = Servico.CONSULTORIA;
+		} else if (nomeServico.toUpperCase() == "TREINAMENTO") {
+			servico = Servico.TREINAMENTO;
+		} else {
+			servico = Servico.OUTROS;
+		}
+		
+		return servico;
 	}
 	
 }

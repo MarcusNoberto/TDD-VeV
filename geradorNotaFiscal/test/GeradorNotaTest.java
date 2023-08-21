@@ -45,4 +45,22 @@ class GeradorNotaTest {
 		assertEquals(100.0, nf.getValorNota());
 	}
 	
+	@Test
+	void testSalva() {
+		String testeSalva = geradorNota.salva(nf);
+		assertEquals("salvando no banco", testeSalva);
+	}
+	
+	@Test
+	void testEnviaSap() {
+		String testeEnviaSap = geradorNota.enviaSap(nf);
+		assertEquals("enviando pro sap", testeEnviaSap);
+	}
+	
+	@Test
+	void testEnviaEmail() {
+		String testeEnviaEmail = geradorNota.enviaEmail(nf);
+		assertEquals("enviando por email", testeEnviaEmail);
+	}
+
 }
