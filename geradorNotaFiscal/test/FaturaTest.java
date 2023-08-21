@@ -27,3 +27,34 @@ class FaturaTest {
 	void testNomeCliente2() {
 		assertNotEquals(f2.getNome(), "Mari");
 	}
+
+	@Test
+	void testEndereco1() {
+		assertEquals(f3.getEndereco(), "Rua do Sol");
+	}
+	
+	@Test
+	void testEndereco2() {
+		assertNotEquals(f2.getEndereco(), "Rua da Area");
+	}
+	
+	@Test
+	void testValor1() {
+		assertEquals(f3.getValor(), 100.00);
+	}
+	
+	@Test
+	void testValor2() {
+		assertNotEquals(f2.getValor(), 100.00);
+	}
+
+	@Test
+	void testServico1() {
+		assertEquals(f1.getServico(), Servico.CONSULTORIA);
+	}
+	
+	@Test
+	void testServico2() {
+		assertNotEquals(f2.getValor(), Servico.OUTROS);
+	}
+}
