@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import gerador.Fatura;
 import gerador.Servico;
 
-class TarefaTest {
+class FaturaTest {
 
 	Fatura f1;
 	Fatura f2;

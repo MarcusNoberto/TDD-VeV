@@ -15,8 +15,7 @@ public class GeradorNota {
 		this.notas = new ArrayList<NotaFiscal>();
 	}
 	
-	public NotaFiscal gerarNota (Fatura fatura) {
-		
+	public NotaFiscal gerarNota (Fatura fatura) {	
 		double valorImposto = Util.calculaImposto(fatura.getServico(), fatura.getValor());
 
 		NotaFiscal nf = new NotaFiscal(fatura.getNome(), fatura.getValor(), valorImposto);

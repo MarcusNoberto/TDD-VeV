@@ -37,7 +37,6 @@ public class Fatura {
 		if (nome.isBlank()) {
 			throw new IllegalArgumentException("Informações não podem ser vazios.");
 		}
-
 		this.nome = nome;
 	}
 
@@ -74,7 +73,6 @@ public class Fatura {
 		if (endereco == null) {
 			throw new NullPointerException("Informações não podem ser nulos.");
 		}
-		
 		this.servico = servico;
 	}
 
