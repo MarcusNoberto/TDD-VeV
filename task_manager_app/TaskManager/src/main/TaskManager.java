@@ -1,9 +1,9 @@
+package main;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-
 public class TaskManager {
-    private List<Task> tasks = new ArrayList<>();
+	private List<Task> tasks = new ArrayList<>();
 
     public Task createNewTask(String title, String description, String dueDate, Priority priority) {
         Task newTask = new Task(title, description, dueDate, priority);
