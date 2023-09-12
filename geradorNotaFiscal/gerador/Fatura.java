@@ -12,10 +12,10 @@ public class Fatura {
 	public Fatura (String nome, String endereco, double valor, String servico) {
 		
 		if (nome == null || endereco == null || valor <= 0 || servico == null) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		if (nome.isBlank() || endereco.isBlank() || servico.isBlank()) {
-			throw new IllegalArgumentException("InformaÃ§Ãµes nÃ£o podem ser vazios.");
+			throw new IllegalArgumentException("Informações não podem ser vazios.");
 		}
 		
 		this.nome = nome;
@@ -32,10 +32,10 @@ public class Fatura {
 
 	public void setNome(String nome) {
 		if (nome == null) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		if (nome.isBlank()) {
-			throw new IllegalArgumentException("InformaÃ§Ãµes nÃ£o podem ser vazios.");
+			throw new IllegalArgumentException("Informações não podem ser vazios.");
 		}
 		this.nome = nome;
 	}
@@ -46,10 +46,10 @@ public class Fatura {
 
 	public void setEndereco(String endereco) {
 		if (endereco == null) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		if (endereco.isBlank()) {
-			throw new IllegalArgumentException("InformaÃ§Ãµes nÃ£o podem ser vazios.");
+			throw new IllegalArgumentException("Informações não podem ser vazios.");
 		}
 		this.endereco = endereco;
 	}
@@ -60,7 +60,7 @@ public class Fatura {
 
 	public void setValor(double valor) {
 		if (valor <= 0) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		this.valor = valor;
 	}
@@ -71,7 +71,7 @@ public class Fatura {
 
 	public void setServico(Servico servico) {
 		if (endereco == null) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		this.servico = servico;
 	}
