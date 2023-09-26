@@ -1,9 +1,11 @@
-package test;
+package junit5Tests;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import gerador.Servico;
 
+@DisplayName("Teste para a classe Util")
 class UtilTest {
 
 	@Test

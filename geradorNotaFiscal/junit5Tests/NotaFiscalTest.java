@@ -1,12 +1,14 @@
-package test;
+package junit5Tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import gerador.NotaFiscal;
 
+@DisplayName("Testes para Nota Fiscal")
 class NotaFiscalTest {
 
 	NotaFiscal nf1;

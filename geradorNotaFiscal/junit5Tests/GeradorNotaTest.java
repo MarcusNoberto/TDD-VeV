@@ -1,8 +1,9 @@
-package test;
+package junit5Tests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import gerador.Fatura;
@@ -17,6 +18,7 @@ class GeradorNotaTest {
 	private NotaFiscal nf;
 	
 	@BeforeEach
+	@DisplayName("Teste para Gerador de Nota Fiscal")
 	void testGeraNotaFiscal() {
 		geradorNota = new GeradorNota();
 		fatura = new Fatura("Jose", "Rua da Pedra", 100.00, "CONSULTORIA");

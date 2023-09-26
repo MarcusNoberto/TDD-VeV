@@ -9,10 +9,10 @@ public class NotaFiscal {
 	public NotaFiscal (String nomeCliente, double valorNota, double valorImposto) {
 		
 		if (nomeCliente == null || valorNota <= 0 || valorImposto <= 0) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		if (nomeCliente.isBlank()) {
-			throw new IllegalArgumentException("InformaÃ§Ãµes nÃ£o podem ser vazios.");
+			throw new IllegalArgumentException("Informações não podem ser vazios.");
 		}
 		
 		this.nomeCliente = nomeCliente;
@@ -26,10 +26,10 @@ public class NotaFiscal {
 
 	public void setNomeCliente(String nomeCliente) {
 		if (nomeCliente == null) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		if (nomeCliente.isBlank()) {
-			throw new IllegalArgumentException("InformaÃ§Ãµes nÃ£o podem ser vazios.");
+			throw new IllegalArgumentException("Informações não podem ser vazios.");
 		}
 		
 		this.nomeCliente = nomeCliente;
@@ -40,7 +40,7 @@ public class NotaFiscal {
 
 	public void setValorNota(double valorNota) {
 		if (valorNota <= 0) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		
 		this.valorNota = valorNota;
@@ -52,7 +52,7 @@ public class NotaFiscal {
 
 	public void setValorImposto(double valorImposto) {
 		if (valorNota <= 0) {
-			throw new NullPointerException("InformaÃ§Ãµes nÃ£o podem ser nulos.");
+			throw new NullPointerException("Informações não podem ser nulos.");
 		}
 		
 		this.valorImposto = valorImposto;

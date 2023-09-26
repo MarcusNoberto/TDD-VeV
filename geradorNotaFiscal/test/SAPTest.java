@@ -12,7 +12,7 @@ class SAPTest {
 
 	@Test
 	void test() {
-		Fatura fatura = new Fatura("José", "Rua da Pedra", 100.00, "CONSULTORIA");
+		Fatura fatura = new Fatura("Jose", "Rua da Pedra", 100.00, "CONSULTORIA");
 		GeradorNota geradorNota = new GeradorNota();
 		NotaFiscal nf = geradorNota.gerarNota(fatura);
 		assertEquals("enviando pro sap", util.SAP.envia(nf));

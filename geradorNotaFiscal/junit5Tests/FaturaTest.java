@@ -1,13 +1,13 @@
-package test;
+package junit5Tests;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 import gerador.Fatura;
 import gerador.Servico;
 
+@DisplayName("Casos de Teste Para Fatura")
 class FaturaTest {
 
 	Fatura f1;
@@ -15,7 +15,7 @@ class FaturaTest {
 	Fatura f3;
 	
 	@BeforeEach
-	void testFatura() {
+	void faturaTest() {
 		f1 = new Fatura("Jose", "Rua da Pedra", 100.00, "CONSULTORIA");
 		f2 = new Fatura("Maria", "Rua da Areia", 200.00, "TREINAMENTO");
 		f3 = new Fatura("Joao", "Rua do Sol", 100.00, "TESTE");
